@@ -1,0 +1,37 @@
+body {
+    min-height: 100vh;  /*Vertical Height: viewport 의 높이의 1/100 단위 */
+    display: flex; /* 가장 큰 태그인 header, div, footer 순으로 좌에서 우로 배치*/
+    flex-direction: column; /*수직방향으로 flex 적용*/
+}
+
+.container {
+    display: flex;
+    flex: 1; /*flex-grow:1 증가너비*/
+}
+
+main {
+    flex: 1;
+    padding: 0 20px;
+}
+
+nav {
+    flex: 0 0 180px;
+}
+
+aside {
+    flex: 0 0 130px;
+    padding: 0 10px;
+}
+
+#navigation-title {
+    color: red;
+}
+
+.menu-item {
+    text-decoration: underline;
+}
+
+.selected {
+    font-weight: bold;
+    color:#009999;
+}

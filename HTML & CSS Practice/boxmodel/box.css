@@ -1,0 +1,37 @@
+h1 {
+    background: gray;
+    width: 60% /*화면의 가로 60%*/
+}
+
+p {
+    background: rgba(255,84,104,0.3);
+    width: 80%;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+span {
+    background:  yellow;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+p {
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+#exception {
+    border: 10px solid darkolivegreen;
+    border-radius: 10px 20px 100px 100px;
+    border-style: dotted;
+}
+
+#shadow {
+    box-shadow: 5px 10px 20px 5px;
+}
+
+#margin {
+ margin: 10px 20px 30px 40px;   
+}

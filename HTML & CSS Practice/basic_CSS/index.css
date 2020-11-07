@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    color: black;
+}
+
+header, footer {
+    font-size: large;
+    text-align: center;
+    padding: 0.3em 0;
+    background-color: brown;
+}
+
+nav {
+    background: wheat;
+}
+
+main {
+    background: teal;
+}
+
+aside {
+    background: thistle;
+}
