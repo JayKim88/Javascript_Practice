@@ -1,0 +1,28 @@
+.friends {
+  padding-bottom: 20px;
+}
+
+.friends .friends__plus {
+  margin: 20px 0px; /*border에서 다른 블럭 까지의 거리. */
+  padding: 20px 0px; /*border까지의 거리. */
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+}
+.friends__plus .friends__title,
+.friends__list .friends__title {
+  font-size: 15px;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+.friend__column .friend__now-listening {
+  border: 2px solid #62d38a;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+.friend__now-listening span {
+  opacity: 0.6;
+}
+.friend__now-listening i {
+  font-size: 13px;
+}

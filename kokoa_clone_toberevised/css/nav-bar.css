@@ -1,0 +1,49 @@
+.nav {
+  background-color: #fcfcfc;
+  position: fixed; /*fixed 사용 시 width 설정이 필요함. */
+  width: 100%;
+  padding: 20px 50px; /*top, bottom: 20px, left,right: 50px*/
+  left: 0px;
+  bottom: 0px;
+  border-top: 1px solid #f7f7f7;
+}
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav i {
+  font-size: 25px;
+}
+.nav .nav__list-link {
+  position: relative; /*Badge 의 포지션이 메세지 기준(absolute)으로 조정하기 위해 부모클래스 relative로 설정*/
+}
+.nav .nav__badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 15px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+.nav {
+  transform: translateY(
+    80px
+  ); /*main 먼저 나타난뒤 nav바를 나타내기 위해 최초 위치는 80px(화면밑) 에 위치시킴*/
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}

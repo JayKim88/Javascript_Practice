@@ -1,0 +1,42 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"); /*google font*/
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+* {
+  box-sizing: border-box; /*모든 요소의 사이즈를 border-box에 맞춘다. padding을 추가해도 화면은 더이상 확장되지 않음.*/
+}
+body {
+  background-color: white;
+  padding: 10px 20px; /*up, dawn: 10px, left, right: 20px*/
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* height: 10000000px; 무한 스크롤 */
+}
+a {
+  color: inherit; /*get the color from the father. in this case, black color*/
+  text-decoration: none; /*링크 제거*/
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.5s ease-in-out; /*모든 Main 화면에 밑에서 위로 (Y:20px-> 0px) 올라가는 효과 적용*/
+}
